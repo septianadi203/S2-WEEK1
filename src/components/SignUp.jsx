@@ -48,13 +48,23 @@ export function SignUp(props) {
                 autoFocus
               />
             </Form.Group>
+            <Form.Group className="mb-3" controlId="useAs">
+              <Form.Label className='fw-bold'>Use As</Form.Label>
+              <div className='d-flex gap-3'>
+                <Form.Check type='radio' value="User" name="useAs" label="User" />
+                <Form.Check type='radio' value="Owner" name="useAs" label="Owner" />
+              </div>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="gender">
+              <Form.Label className='fw-bold'>Gender</Form.Label>
+              <div className='d-flex gap-3'>
+                <Form.Check type='radio' value="Laki-Laki" name="gender" label="Laki-Laki" />
+                <Form.Check type='radio' value="Permpuan" name="gender" label="Perempuan" />
+              </div>
+            </Form.Group>
             <Form.Group className="mb-3" controlId="">
               <Form.Label className='fw-bold'>Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder=""
-                autoFocus
-              />
+              <Form.Control type="" placeholder="" autoFocus />
             </Form.Group>
           <Button type='submit' className='w-100 mt-3' variant="primary">
             Sign Up
