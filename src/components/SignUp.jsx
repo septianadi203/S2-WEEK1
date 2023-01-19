@@ -48,6 +48,14 @@ export function SignUp(props) {
                 autoFocus
               />
             </Form.Group>
+            <Form.Group className="mb-3" controlId="">
+              <Form.Label className='fw-bold'>Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder=""
+                autoFocus
+              />
+            </Form.Group>
           <Button type='submit' className='w-100 mt-3' variant="primary">
             Sign Up
           </Button>
